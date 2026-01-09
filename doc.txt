@@ -1,0 +1,10 @@
+ npm create vite@4.1.0
+ Project name: ... change_react
+√ Select a framework: » React
+√ Select a variant: » TypeScript
+ cd change_react
+  npm install
+  npm run dev
+
+npm install keycloak-js
+npm install keycloak-js @react-keycloak/web
