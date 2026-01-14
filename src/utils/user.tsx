@@ -7,6 +7,8 @@ function Profile() {
 
   const tokenParsed = keycloak.tokenParsed;
 
+  console.log(tokenParsed);
+
   return {
     Username: tokenParsed?.preferred_username,
     Email: tokenParsed?.email,

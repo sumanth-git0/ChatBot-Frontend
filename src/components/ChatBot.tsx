@@ -7,12 +7,12 @@ interface ChatMessage {
   id: number;
   query: string;
   response: string;
-  user_id: number;
+  user_id: any;
 }
 
 interface QueryInput {
   query: string;
-  user_id: number;
+  user_id: any;
 }
 
 const ChatBot: React.FC = () => {
@@ -23,7 +23,7 @@ const ChatBot: React.FC = () => {
 
   const chatEndRef = useRef<HTMLDivElement | null>(null);
 
-  const fetchChats = async (user_id: Number) => {
+  const fetchChats = async (user_id: any) => {
     const resp = await api.get<ChatMessage[]>("/chats/user/" + user_id);
     setChat(resp.data);
   };

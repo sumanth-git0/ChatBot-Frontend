@@ -8,3 +8,4 @@
 
 npm install keycloak-js
 npm install keycloak-js @react-keycloak/web
+npm install react-router-dom
